@@ -1,4 +1,86 @@
+:root {
+    --bg-dark: rgb(17,24,39);
+    --bg-lighter-dark: rgb(31,41,55);
+    --logo-wrapper-height: 150px;
+    --logo-wrapper-margin: 20vh;
+    --form-height: 30vh;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url("./assets/fonts/Norse-Bold.otf");
+}
+
+
 body {
-    background-color: black;
-    color: whitesmoke;
+    height: 100vh;
+    background-color: var(--bg-dark);
+    color: white;
+    display: flex;
+    
+}
+
+#left-section {
+    background-image: url("./assets/images/starry-sky.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 40vw;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+    height: var(--logo-wrapper-height);
+    margin-top: var(--logo-wrapper-margin);
+    font-size: 100px;
+    font-family: Norse-Bold;
+}
+
+.logo-wrapper img {
+    max-width: 300px;
+    max-height: 130px;
+    margin-top: 10px;
+}
+
+#right-section {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+
+#description {
+    padding-top: 15vh;
+    padding-left: 3vw;
+    padding-bottom: 3vh;
+    font-size: larger;
+}
+
+#form {
+    align-self: stretch;
+    background-color: var(--bg-lighter-dark);
+    height: var(--form-height);
+    padding-left: 3vw;
+}
+
+#account {
+    padding-left: 3vw;
+}
+
+#account button {
+    height: 35px;
+    width: 150px;
+    margin: 2vh auto;
+    background-color: burlywood;
+    border: 0px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: inherit;
+    font-size: 14px;
+}
+
+#account a {
+    text-decoration: none;
+    color: burlywood;
 }
