@@ -22,6 +22,36 @@
         </div>
         <div id="form">
             <h2>Let's do this!</h2>
+            <form action="" method="POST">
+                <div class="formLeft">
+                    <p>
+                        <label for="first-name"><span>FIRST NAME</span></label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Thor">
+                    </p>
+                    <p>
+                        <label for="email"><span>EMAIL</span></label>
+                        <input type="email" name="email" id="email">
+                    </p>
+                    <p>
+                        <label for="password"><span>PASSWORD</span></label>
+                        <input type="password" name="password" id="password" required>
+                    </p>
+                </div>
+                <div class="formRight">
+                    <p>
+                        <label for="last-name"><span>LAST NAME</span></label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Odinson">
+                    </p>
+                    <p>
+                        <label for="phone"><span>PHONE NUMBER</span></label>
+                        <input type="tel" name="phone" id="phone" pattern="^07\d{8}$" placeholder="0712345678" title="Please enter a phone numer starting with 07, 10 digits long">
+                    </p>
+                    <p>
+                        <label for="password-confirm"><span>CONFIRM PASSWORD</span></label>
+                        <input type="password-confirm" name="password-confirm" id="password-confirm" required>
+                    </p>
+                </div>
+            </form>
         </div>
         <div id="account">
             <button> Create Account</button>

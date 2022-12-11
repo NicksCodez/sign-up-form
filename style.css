@@ -3,7 +3,6 @@
     --bg-lighter-dark: rgb(31,41,55);
     --logo-wrapper-height: 150px;
     --logo-wrapper-margin: 20vh;
-    --form-height: 30vh;
 }
 
 @font-face {
@@ -51,7 +50,7 @@ body {
 }
 
 #description {
-    padding-top: 15vh;
+    padding-top: 7.3vh;
     padding-left: 3vw;
     padding-bottom: 3vh;
     font-size: larger;
@@ -60,8 +59,8 @@ body {
 #form {
     align-self: stretch;
     background-color: var(--bg-lighter-dark);
-    height: var(--form-height);
     padding-left: 3vw;
+    padding-bottom: 2vh;
 }
 
 #account {
@@ -78,9 +77,48 @@ body {
     font-weight: bold;
     color: inherit;
     font-size: 14px;
+    cursor: pointer;
 }
 
 #account a {
     text-decoration: none;
     color: burlywood;
+}
+
+form {
+    display: flex;
+    gap: 4vw;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.formLeft p,
+.formRight p{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input {
+    font-size: 20px;
+    font-family: inherit;
+    width: 230px;
+    height: 30px;
+    padding: 0 5px;
+    margin: 4px 0px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: rgb(3, 78, 240);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 1px;
+}
+
+input:invalid {
+    border-color: red;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 1px;
 }
